@@ -1,41 +1,73 @@
-# Compiled Lua sources
-luac.out
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+local Window = Library.CreateLib(".gg/Xv2u44UpCr", "Synapse")
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+local Tab = Window:NewTab("Teleports")
+local Section = Tab:NewSection("Teleports")
 
-# Precompiled Headers
-*.gch
-*.pch
+Section:NewLabel("im not good in lua so dm Kingmonkeh#1016 if you")
+Section:NewLabel("want to help me create autofarms for this script.")
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+Section:NewButton("Bypassed Speed(PATCHED)", "Speed", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
+end)
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+Section:NewButton("RollRarity", "TPS u to RollRarity button", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2.38418579e-07, 0.125, 40, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+Section:NewButton("Sacrifice", "TPS u to Sacrifice button", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(40, -0.125, 40, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
 
+Section:NewButton("SacrificeLuck", "TPS u to SacrificeLuck button", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(40, -0.125, 28, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("SacrificeRollspeed", "TPS u to SacrificeRollSpeed button", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(40, -0.125, 20, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("SacrificeBulk", "TPS u to SacrificeBulk button", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(40, -0.125, 12, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("Sacrificemulti", "TPS u to Sacrificemulti button", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(40, -0.125, 4, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("Prestige", "TPS u to Prestige button", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(40, -0.125, -40, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("PresLuck", "TPS u to PrestigeLuck button", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28, -0.125, -40, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("PresSacrifice", "TPS u to PrestigeSacrifice button", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(20, -0.125, -40, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("Prestigemulti", "TPS u to Prestigemulti button", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(20, -0.125, -40, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("Ascend", "TPS u to Ascension button", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-40, -0.125, -40, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("AscLuck", "TPS u to Ascensionluck button", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-92.75, 13.125, -18, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("AscSacrifice", "TPS u to AscensionSac button", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-92.75, 13.125, -10, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("Ascpres", "TPS u to AscensionPres button", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-92.75, 13.125, -2, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("Ascmulti", "TPS u to Ascensionmulti button", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-92.75, 13.125, 6, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
